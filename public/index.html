@@ -11,8 +11,10 @@
 
   
 </head>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
 <script src = "js/addvalues.js" ></script>
 
 <body>
@@ -73,20 +75,16 @@
 
 
 <!-- map display -->
-    <div id="map" style="width:50%;height:75%;background:#111;position: absolute; top: 22%; left: 25%; border: 1px solid #ccc;margin-top:5px; border-radius: 9px 9px 9px 9px;
-   box-shadow: 1px 1px 11px #330033; color: transparent; 
- "></div>
-    <script>
-function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(19.663280, 75.300293),
-    zoom: 6,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
+    <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYmxhaWRlYWphaWxvciIsImEiOiJja2c1MWFicGowMGNwMnFtb2wyb2EyZzB5In0.9256U0TAbi9uUlkoopGEUw';
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+  center: [-74.5, 40], // starting position [lng, lat]
+  zoom: 9 // starting zoom
+  });
 </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 <html lang="en" >
 
 <head>
