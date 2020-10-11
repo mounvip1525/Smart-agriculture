@@ -50,10 +50,7 @@ body {
   font-family: Raleway, sans-serif;
   line-height: 1;
 }
-#cssmenu > ul {
-  background: #black;
 
-}
 #cssmenu > ul > li {
   float: right;
   -webkit-perspective: 1000px;

@@ -36,11 +36,9 @@
   font-family: Raleway, sans-serif;
   line-height: 1;
 }
-#cssmenu > ul {
-  background:black;
 
-}
 #cssmenu > ul > li {
+  margin-top:15px;
   float: right;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
@@ -68,7 +66,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
-  background: #3db2e1;
+  background:#3db2e1;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
@@ -104,7 +102,7 @@
   height: 100%;
   padding: 16px 20px;
   color: #dff2fa;
-  background: #19799f;
+  background: #5eaaa8;
   content: attr(data-title);
   /* -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;

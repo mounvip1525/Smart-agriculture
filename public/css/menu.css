@@ -5,9 +5,7 @@ body {
   background-position: 40%;
   background-repeat: no-repeat;
   font-family: 'Raleway', sans-serif;
-  background: #136a8a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #136a8a, #267871); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #136a8a, #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: -webkit-linear-gradient(105deg,#056676 30%,#5eaaa8 50%,#a3d2ca 50%,#e8ded2 80%);
 }
 
 h1 {
@@ -52,7 +50,7 @@ small {
     margin-top: -20px;
 }
 .navicon:before, .navicon:after {
-  background: #3db2e1;
+  background: #5eaaa8;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   content: "";
@@ -63,8 +61,8 @@ small {
   width: 50px;
 }
 .navicon:before {
-  -webkit-box-shadow: blue 0 14px 0 0;
-          box-shadow: blue 0 14px 0 0;
+  -webkit-box-shadow: #a3d2ca 0 14px 0 0;
+          box-shadow: #a3d2ca 0 14px 0 0;
   position: absolute;
   top: 0;
 }
@@ -96,7 +94,8 @@ small {
   top: -10%;
   display: block;
   margin:10px auto;
-  width: 100%;
+  width: 80%;
+  border-radius: 12px;
 height: 70%;
   z-index: 110;
   background-color:#A411ED;
@@ -137,13 +136,14 @@ height: 70%;
   transition: linear 0.5s all;
   font-weight: 600;
   padding: 5px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .toggle__menu li a span {
   text-transform: lowercase;
 }
 .toggle__menu li a:hover {
-  color: #db5523;
-  border-bottom: 2px solid #db5523;
+  color: #056676;
+  border-bottom: 2px solid #056676;
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
   -webkit-transform: scale(1.15);

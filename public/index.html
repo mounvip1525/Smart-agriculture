@@ -29,7 +29,7 @@
 <div class="search_categories" type = "submit" id="search_box">
     <div class="select" id="cityname" style="visibility:none;">
        <select name="location"  onchange="changelocation(); " id = "search_categories">
-          <option value="none" selected="selected">Set Manual Location</option>
+          <option value="none" selected="selected" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;left:3%">SET MANUALLY</option>
           <option value="Bangalore">Bangalore</option>  
           <option value="Bareilly">Bareilly</option>
           <option value="Bhatinda">Bhatinda</option>
@@ -73,7 +73,7 @@
 
 
 <!-- map display -->
-    <div id="map" style="width:35%;height:50%;background:#111;position: absolute; top: 20%; left: 32%; border: 1px solid #ccc;margin-top:5px; border-radius: 9px 9px 9px 9px;
+    <div id="map" style="width:50%;height:75%;background:#111;position: absolute; top: 22%; left: 25%; border: 1px solid #ccc;margin-top:5px; border-radius: 9px 9px 9px 9px;
    box-shadow: 1px 1px 11px #330033; color: transparent; 
  "></div>
     <script>
@@ -133,11 +133,9 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 <body>
 
   <a href="#any" class="navicon"></a>
-<div class="toggle" style="background: #83a4d4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+<div class="toggle" style="background-image: -webkit-linear-gradient(55deg,#056676 20%,#5eaaa8 50%,#a3d2ca 50%,#e8ded2 80%);
 ">
-  <h1>EXPLORE</h1>
+  <h1 style="color:#111">EXPLORE</h1>
 
   <ul class="toggle__menu">
      <li><a href="index.html">Home</a></li>
@@ -184,7 +182,7 @@ background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, F
 <body>
 <div id='cssmenu'>
 <ul>
-   <li class='active'><a href='/home'>Home</a></li>
+   <li class='active'><a href='index.html'>Home</a></li>
 
    <!-- <li><a href='#'onclick="on();">Sponsors</a></li> -->
    <script type="js/overlay.js"></script>
@@ -194,7 +192,7 @@ background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, F
    </div> 
 <link rel="stylesheet" href="css/overlay.css">
  <script src="js/overlay.js"></script>
-<div style="padding:20px; margin-top:5px;">
+<div style="bottom:-10%">
 </div>
 </ul>
 
@@ -202,27 +200,20 @@ background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, F
 <div class="blink">
 		 <div id="downloadtext"
 	 style=" position: absolute;
-    left: 40%;
-    top: 30%;
-    font-size: 1.2rem;
+    left: 35%;
+    top: 50%;
+    font-size: 2rem;
     font-family: cursive;
-    color: white;">AGRICULTURAL ANALYSIS</div>
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">AGRICULTURAL ANALYSIS<hr style="width: 85%;
+    border:0;
+    height:1.2px;top:-2%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));"></div>
   <!-- <span><a href='https://drive.google.com/uc?export=download&id=0B_ukIhKI34mxWE45VEY0ZDhWbkhfRHNhMGJOUUdOTU93V09R'><b>DOWNLOAD NOW<b></a></span> -->
 </div>
 </div>
 
 <div class="wrapper">
- <!-- <div class="loader">
- 	  <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div> -->
 </div> 
    
 </body>

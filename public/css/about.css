@@ -1,6 +1,6 @@
 html, body{
   min-height: 100vh;
-  background-color: #111;
+ 
 }
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -40,10 +40,7 @@ html, body{
   font-family: Raleway, sans-serif;
   line-height: 1;
 }
-#cssmenu > ul {
-  background: #black;
 
-}
 #cssmenu > ul > li {
   float: right;
   -webkit-perspective: 1000px;
@@ -299,7 +296,7 @@ html, body{
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700,500,300);
 body {
-  background-color: #111;
+  background-image: -webkit-linear-gradient(55deg,#056676 20%,#5eaaa8 50%,#a3d2ca 50%,#e8ded2 80%);
   background-position: 40%;
   background-repeat: no-repeat;
   font-family: 'Raleway', sans-serif;
@@ -366,13 +363,14 @@ small {
           transform: rotate(315deg);
 }
 .toggle {
-  position: fixed;
+  position: relative;
   left: 0%;
   top: -10%;
   display: block;
   margin:10px auto;
-  width: 100%;
-  height: 70%;
+  width: 80%;
+  border-radius: 12px;
+height: 70%;
   z-index: 110;
   background-color:#A411ED;
   padding: 15px;
@@ -412,27 +410,28 @@ small {
   transition: linear 0.5s all;
   font-weight: 600;
   padding: 5px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .toggle__menu li a span {
   text-transform: lowercase;
 }
 .toggle__menu li a:hover {
-  color: #db5523;
-  border-bottom: 2px solid #db5523;
+  color: #056676;
+  border-bottom: 2px solid #056676;
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   font-weight: 700;
 }
-/*social networking icons*/
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 body {
     font-family: 'Lato', sans-serif;
-    color: #00C5FF;
+    color: black;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -559,18 +558,18 @@ ul.social-icons {
 /*  aou us from here   */
 
 
-html, body, #page-one, #page-two, #page-three, #page-four, #page-five {
+html, body,#page-one {
   height: auto;
   min-height: 100vh;
-  background-color: #111;
 }
 
-#page-one, #page-two, #page-three, #page-four, #page-five {
-  padding-top:2rem;
+#page-two{
+  padding-top:8rem;
+  height:65vh;
 }
 
 #mainNav {
-  background-color: #668AE4;
+  background-color: #056676;
   color: #ddd;
   line-height: 4em;
   padding: 0rem 2em;
@@ -587,45 +586,40 @@ html, body, #page-one, #page-two, #page-three, #page-four, #page-five {
   padding: 0 1rem;
 }
 #mainNav a:hover {
-  color: #4861A2;
+  color: black;
 }
 h1 {
   font-size: 3em;
-  padding-top: 3em;
-  padding-left:2.5em;
+  padding-top: 2em;
+  padding-left:3em;
+  padding-right:3em;
   text-align: left;
+  
 }
 h2 {
-  font-size: 3em;
-  padding-top: 3.5em;
-  padding-left:7em;
+  font-size: 2.5em;
+  padding-left:1.2em;
+  padding-right:2em;
   text-align: left;
 }
 p {
- font-size: 1.5em;
+ font-size: 1em;
   padding-top: .5em;
-  padding-left:14em;
+  padding-left:3em;
+  padding-right:3em;
   text-align: left;
   
 }
 
 
-#page-one {
-  background-color: #111;
-}
-
 #page-two {
-  background-color: #222;
-  
+  background-image: -webkit-linear-gradient(125deg,#056676 20%,#5eaaa8 50%,#a3d2ca 50%,#e8ded2 80%);
+  display:flex;
+  flex-direction:row;
+}
+.firstname{
+  margin-right:10%;
+  margin-left:10%;
 }
 
-#page-three {
-  background-color: #333;
-}
 
-#page-four {
-  background-color: #444;
-}
-#page-five {
-  background-color: #555;
-}
