@@ -107,6 +107,9 @@ def rainfall(temp_final,rainfall_final,temp,rain_fall):
  
 #-------------------get nutrients of farmers area-----------------------------#
 def nutrients(state,rainfall_final,temp_final):
+    narea = 0
+    parea = 0
+    karea = 0
     try:
         #print('this is state:'+state)
         with open('code/nutrientsarea.csv', 'r') as csvfile:
@@ -118,7 +121,7 @@ def nutrients(state,rainfall_final,temp_final):
                    karea=conv(row[3])
                    ph=row[4]
     except IOError:
-       print "No file exists named nutrientsarea.csv"
+       print("No file exists named nutrientsarea.csv")
        sys.exit("The required file does not exist!!!")               
     csvfile.close
 
@@ -130,6 +133,7 @@ def nutrients(state,rainfall_final,temp_final):
             #writer=csv.writer(metacrops)
             metacrops.writelines("Crop, Rainfall, Temperature, pH \n")
             for row in reader:
+               print(row)
                ncrop=conv(row[8])
                pcrop=conv(row[9])
                kcrop=conv(row[10])
@@ -141,7 +145,7 @@ def nutrients(state,rainfall_final,temp_final):
                    metacrops.writelines(total)
                    #print total
     except IOError:
-       print "No file exists named cropDB.csv",
+       print("No file exists named cropDB.csv"),
        sys.exit("The required file does not exist!!!")     
     csvfile.close
     metacrops.close 
@@ -162,7 +166,7 @@ def filewrite():
                         continue
                     f1.write(line)
     except IOError as e:
-            print "I/O error({0}): {1}".format(e.errno, e.strerror)
+            print("I/O error({0}): {1}".format(e.errno, e.strerror))
             sys.exit("No such file exists")
     f.close
     f1.close  
@@ -204,7 +208,7 @@ def regression():
                #predecting test set results
                '''Y_pred_test = regressor.predict(X_test)
                print("this is Y test:", Y_test)
-               print "\n"
+               print("\n")
                print("this is Y predicted:", Y_pred_test) '''
        
                #predecting final set results
@@ -223,7 +227,7 @@ def regression():
        return sorted_crops
    
     except IOError:
-        print "No file exists named metacrops11.csv"
+        print("No file exists named metacrops11.csv")
         sys.exit("No such file exists")
     os.remove('code/metacrops.csv')       
     os.remove('code/metacrops11.csv')
