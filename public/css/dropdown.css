@@ -55,9 +55,9 @@ select {
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
 .btn {
-  margin-top: 8%;
   transition: all .5s ease-in-out;
-  color: black;
+  color: white;
+  margin-top: 30px;
   height: 10%;
   width: 25%;
   background-color: #333;
