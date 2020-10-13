@@ -1,25 +1,23 @@
 .search_categories {
   font-size: 13px;
   padding: 5px;
-  /*background: #fff;*/
   border: 1px solid #ccc;
   border-radius: 6px;
   overflow: hidden;
   position: absolute;
   margin-top: 20px;
-  left: 41%;
+  left: 42%;
   top: 12%;
   right: 40%;
-  width: 170px;
+  width: 180px;
   height: 22px;
-  /* line-height: 2; */
-  overflow: hidden;
   -moz-border-radius: 9px 9px 9px 9px;
   -webkit-border-radius: 9px 9px 9px 9px;
   border-radius: 9px 9px 9px 9px;
   box-shadow: 1px 1px 11px rgb(70, 70, 70);
   background: #5eaaa8;
   outline: none;
+  z-index:100;
 }
 
 select:focus {
@@ -57,7 +55,7 @@ select {
 .btn {
   transition: all .5s ease-in-out;
   color: white;
-  margin-top: 30px;
+  margin-top: 10px;
   height: 10%;
   width: 25%;
   background-color: #333;
