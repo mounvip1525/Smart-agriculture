@@ -57,7 +57,7 @@ def conv(nutrient):
 
 
 #----------------------------areas temp and rain -----------------------------#
-with open('code/temprainfall.csv') as csvfile:
+with open('code/temprainfall.csv', 'r') as csvfile:
     #print('this is area:'+area)
     reader = csv.reader(csvfile)
     flag=0
