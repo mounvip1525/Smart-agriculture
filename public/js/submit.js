@@ -1,4 +1,6 @@
-$('.btn').click(function(){
+// $('.btn').click(function(){
+	function subm(){
+	console.log("nj")
 	loop: {
      var index = document.getElementById("search_categories").selectedIndex;
     //alert("value =" + document.getElementById("search_categories").value); // show selected value
@@ -38,7 +40,8 @@ $('.btn').click(function(){
     
 });
 }
-});
+}
+// });
 
 function sendlocation()
 {
