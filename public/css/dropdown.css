@@ -54,28 +54,30 @@ select {
 
 .btn {
   transition: all .5s ease-in-out;
-  color: white;
+  color: black;
   margin-top: 10px;
-  height: 10%;
-  width: 25%;
-  background-color: #333;
-  line-height: 2;
-  border: solid black 4px;
-  border-radius: 30px;
-  padding: 10px 100px;
-  font-family: 'lato', sans-serif;
-  font-size: 100%;
+  width: 170px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background:#5eaaa8;
+  border-radius: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
 
 .btn:hover {
   transition: all .5s ease-in-out;
   color: white;
-  background-color: black;
+  background-color: #056676;
   cursor: pointer;
 }
 
 .btn:focus {
   outline: none;
+}
+.btn:active{
+  transform:translateY(3px);
 }
 
 .load {
