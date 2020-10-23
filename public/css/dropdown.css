@@ -1,3 +1,21 @@
+body{
+  overflow-y:scroll;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background:#e8ded2; 
+  border-radius: 12px;
+  padding:2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#e8fffe; 
+}
 .search_categories {
   font-size: 13px;
   padding: 5px;
@@ -9,7 +27,7 @@
   left: 42%;
   top: 12%;
   right: 40%;
-  width: 180px;
+  width: 160px;
   height: 22px;
   -moz-border-radius: 9px 9px 9px 9px;
   -webkit-border-radius: 9px 9px 9px 9px;
@@ -23,16 +41,14 @@
 select:focus {
   outline: none;
 }
-
 select {
   outline: none;
 }
-
 .search_categories .select select {
   background: #5eaaa8;
   /* line-height: 2; */
   padding: 0;
-  left: 9%;
+  left: 7%;
   border: 1px;
   border-radius: 6px;
   width: 100%;
@@ -43,13 +59,9 @@ select {
   font-size: 15px;
   font-weight: bold;
   padding: 2px 10px;
-  *width: 350px;
   -webkit-appearance: none;
   overflow: hidden;
 }
-
-
-
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
 .btn {
@@ -93,15 +105,13 @@ select {
 }
 
 .green {
-  background-color: #58B14C;
+  background-color: #5eaaa8;
   color: white;
   border: none;
   min-width: 6%;
   height: 10%;
   padding: 8px 0px;
 }
-
-
 
 @-webkit-keyframes roll {
   from {
@@ -117,13 +127,16 @@ select {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 60%;
-  left: 2%;
-  top: 29%;
+  left: 20%;
+  top: 22%;
+  border-radius: 15px;
+  padding:8px;
+  z-index:150;
+  box-shadow: 0 15px 30px 10px rgba(0,0,0,0.3);
   position: absolute;
   visibility: hidden;
   text-align: center;
-  overflow-y: scroll;
-  height: 475px;
+  height: auto;
   display: block;
 }
 
@@ -132,23 +145,43 @@ select {
   border: 1px solid #ddd;
   padding: 8px;
   max-width: 28px;
-  background-color: #111;
+  background-color:-webkit-linear-gradient(55deg, #a3d2ca 50%,#e8ded2 50%);
   font-size: 20px;
-
+  border-radius:3px;
+  color:white;
 }
-
-#crops tr:nth-child(even) {
-  background-color: #111;
+td{
+  vertical-align:middle;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
 }
-
-#crops tr:hover {
-  background-color: #ddd;
+td:hover{
+  transform:scale(1.1);
 }
-
+img{
+  border-radius:5px;
+}
+img:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 #crops th {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #4CAF50;
+  background-color: #5eaaa8;
   color: white;
-
+}
+@media screen and (max-width:600px){
+  .search_categories {
+    left:32%;}
+    .btn{
+      margin-top:110px;
+    }
+    #crops{
+      width: 95%;
+      left:3.5%;
+    }
 }

@@ -23,7 +23,7 @@ function validateForm1() {
 
 <body>
 
-	<div class="container" style="left:-5%">  
+	<div class="container">  
 		 
  <form name="contact"  action="#"  id="contact" onsubmit="return validateForm1();" >
 
@@ -117,18 +117,6 @@ function validateForm() {
 <body>
 <head>
   <meta charset="UTF-8">
-  
-  <div class="blink">
-    <div id="downloadtext"
-  style=" position: absolute;
-   left: 40%;
-   font-size: 1.2rem;
-   font-family: cursive;
-   color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">AGRICULTURAL ANALYSIS</div>
- <!-- <span><a href='https://drive.google.com/uc?export=download&id=0B_ukIhKI34mxWE45VEY0ZDhWbkhfRHNhMGJOUUdOTU93V09R'><b>DOWNLOAD NOW<b></a></span> -->
-</div>
-</div>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
@@ -162,19 +150,18 @@ function validateForm() {
   
 </head>
 <body>
-<div id='cssmenu'>
-<ul>
- <li class='active'><a href='index.html'  >Home</a></li>
-   <script type="js/overlay.js"></script>
-   <div id="overlay" onclick="off()">
-   	<div id="text">
-     <br><img src="c1.jpg" height="70%" width="120%"/></div>
-   </div>
-<link rel="stylesheet" href="css/overlay.css">
- <script src="js/overlay.js"></script>
-<div style="padding:20px">
-</div>
-</ul>
+  <div id='cssmenu' style="position: absolute; top: 0;right: 0;">
+    <ul>
+      <li class='active'><a href='index.html'>Home</a></li>
+      <!-- <li><a href='#'onclick="on();">Sponsors</a></li> -->
+      <div id="overlay" onclick="off()">
+        <div id="text">
+          <br></div>
+      </div>
+      <div>
+      </div>
+    </ul>
+  </div>
 
 </body>
 </html>

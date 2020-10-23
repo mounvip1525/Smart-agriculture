@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Author: Omkar
-"""
 
-# -*- coding: utf-8 -*-
-
-#-----------------------------imports-----------------------------------------#
 import csv
 import datetime
 import sys
@@ -13,9 +6,6 @@ import os
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-#-----------------------------------------------------------------------------#
-
-
 
 #--------------------------variable declaration-------------------------------#
 now = datetime.datetime.now()

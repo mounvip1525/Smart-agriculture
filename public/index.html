@@ -6,9 +6,9 @@
   <!-- Metas, CDNs and Linking -->
   <meta charset="UTF-8">
   <title>Crop prediction System </title>
-  <link rel="icon" type="image/gif/png" href="images/app.png">
   <link rel="stylesheet" href="css/social.css">
-  <link rel="icon" href="./images/farming.svg">
+  <link rel="icon" type="image/gif/png" href="images/app.png" style="position: fixed;">
+   <link rel="icon" href="./images/farming.svg">
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -30,24 +30,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/index.css">
   <script src="js/navigation.js"></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src="js/menu.js"></script>
 </head>
 
-
-<div class="footer-social-icons">
-  <h4 class="_14"><b> </b></h4>
-  <ul class="social-icons">
-    <li><a href="https://www.facebook.com/" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a>
-    </li>
-    <li><a href="https://www.twitter.com/" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
-    <li><a href="https://www.rss.com" class="social-icon" target="_blank"> <i class="fa fa-rss"></i></a></li>
-    <li><a href="https://www.youtube.com" class="social-icon" target="_blank"> <i class="fa fa-youtube"></i></a></li>
-    <li><a href="https://www.linkedin.com" class="social-icon" target="_blank"> <i class="fa fa-linkedin-in"></i></a>
-    </li>
-  </ul>
-</div>
 
 <div class="info">
 </div>
@@ -95,13 +83,7 @@
 </div>
 
 <div class="blink">
-  <div id="downloadtext" style=" position: absolute;
-    left: 35%;
-    top: 5vh;
-    font-size: 2rem;
-    font-family: cursive;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">AGRICULTURAL ANALYSIS
+  <div id="downloadtext" >AGRICULTURAL ANALYSIS
     <hr style="width: 85%;
     border:0;
     height:1.2px;top:-2%;
@@ -109,29 +91,31 @@
   </div>
   <div class="search_categories" type="submit" id="search_box">
     <div class="select" id="cityname" style="visibility:none;">
+      <div onfocus='this.size=5;' onblur='this.size=1;' onchange='this.size=1;'>
       <select name="location" onchange="changelocation(); " id="search_categories">
         <option value="none" selected="selected">SET MANUALLY</option>
-        <option value="Bangalore">Bangalore</option>
-        <option value="Bareilly">Bareilly</option>
-        <option value="Bhatinda">Bhatinda</option>
-        <option value="Coimbatore">Coimbatore</option>
-        <option value="DehraDun">DehraDun</option>
-        <option value="Guwahati">Guwahati</option>
-        <option value="Jabalpur">Jabalpur</option>
-        <option value="Jammu">Jammu</option>
-        <option value="Kolkata">Kolkata</option>
-        <option value="Mangalore">Mangalore</option>
-        <option value="Mysore">Mysore</option>
-        <option value="Panjim">Panjim</option>
-        <option value="PortBlair">PortBlair</option>
-        <option value="Pune">Pune</option>
-        <option value="Rajkot">Rajkot</option>
-        <option value="Ranchi">Ranchi</option>
-        <option value="Shimla">Shimla</option>
-        <option value="Srinagar">Srinagar</option>
-        <option value="Thiruvananthapuram">Thiruvananthapuram</option>
-        <option value="Varanasi">Varanasi</option>
+        <option value="Bangalore">BANGALORE</option>
+        <option value="Bareilly">BAREILLY</option>
+        <option value="Bhatinda">BHATINDA</option>
+        <option value="Coimbatore">COIMBATORE</option>
+        <option value="DehraDun">DEHRADUN</option>
+        <option value="Guwahati">GUWAHATI</option>
+        <option value="Jabalpur">JABALPUR</option>
+        <option value="Jammu">JAMMU</option>
+        <option value="Kolkata">KOLKATA</option>
+        <option value="Mangalore">MANGALORE</option>
+        <option value="Mysore">MYSORE</option>
+        <option value="Panjim">PANJIM</option>
+        <option value="PortBlair">PORTBLAIR</option>
+        <option value="Pune">PUNE</option>
+        <option value="Rajkot">RAJKOT</option>
+        <option value="Ranchi">RANCHI</option>
+        <option value="Shimla">SHIMLA</option>
+        <option value="Srinagar">SRINAGAR</option>
+        <option value="Thiruvananthapuram">THIRUVANANTHAPURAM</option>
+        <option value="Varanasi">VARANASI</option>
       </select>
+    </div>
     </div>
   </div>
 </div>

@@ -21,7 +21,7 @@ body{
 	width:50%;
 	margin: 5rem 28.5rem;
 	position:relative;
-
+  left:-5%;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
@@ -215,4 +215,11 @@ form input[type="submit"]:hover {
 
  .abc {
   display: none;
+}
+@media screen and (max-width:600px){
+  .container{
+    margin:8rem 2.5rem;
+    width:90%;
+    align-items: center;
+  }
 }

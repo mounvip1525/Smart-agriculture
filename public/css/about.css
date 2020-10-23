@@ -1,30 +1,50 @@
 html, body{
   min-height: 100vh;
- 
 }
-
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background:#5eaaa8; 
+  border-radius: 12px;
+  padding:2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#056676; 
+}
+#downloadtext{
+  position: absolute;
+  left: 35%;
+  top: 5vh;
+  font-size: 2rem;
+  font-family: cursive;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a,
-#cssmenu #menu-button {
-  position: static;
-  left: 0%;
-  top: 5%;
+
+#cssmenu {
+  position: absolute;
+  right: 40px;
+  top: 40px;
   margin: 0;
   padding: 0;
   border: 0;
   list-style: none;
   line-height: 1;
   display: block;
- 
+  position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 #cssmenu:after,
-#cssmenu > ul:after {
+#cssmenu>ul:after {
   content: ".";
   display: block;
   clear: both;
@@ -32,16 +52,19 @@ html, body{
   line-height: 0;
   height: 0;
 }
+
 #cssmenu #menu-button {
   display: none;
 }
+
 #cssmenu {
   width: auto;
   font-family: Raleway, sans-serif;
   line-height: 1;
 }
 
-#cssmenu > ul > li {
+#cssmenu>ul>li {
+  margin-top: 15px;
   float: right;
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
@@ -49,19 +72,22 @@ html, body{
   word-spacing: 10px;
 
 }
-#cssmenu.align-center > ul {
+
+#cssmenu.align-center>ul {
   font-size: 0;
   text-align: center;
 }
-#cssmenu.align-center > ul > li {
+
+#cssmenu.align-center>ul>li {
   display: inline-block;
   float: none;
 }
-#cssmenu.align-right > ul > li {
+
+#cssmenu.align-right>ul>li {
   float: right;
 }
 
-#cssmenu > ul > li > a {
+#cssmenu>ul>li>a {
   padding: 15px 20px;
   font-size: 14px;
 
@@ -81,19 +107,22 @@ html, body{
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-#cssmenu > ul > li.active > a {
+
+#cssmenu>ul>li.active>a {
   color: #dff2fa;
 
 }
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li > a:hover {
+
+#cssmenu>ul>li:hover>a,
+#cssmenu>ul>li>a:hover {
   color: #dff2fa;
   -webkit-transform: rotateX(90deg) translateY(-23px);
   -moz-transform: rotateX(90deg) translateY(-23px);
   transform: rotateX(90deg) translateY(-23px);
   -ms-transform: none;
 }
-#cssmenu > ul > li > a::before {
+
+#cssmenu>ul>li>a::before {
   position: absolute;
   top: 100%;
   left: 0;
@@ -105,8 +134,11 @@ html, body{
   height: 100%;
   padding: 16px 20px;
   color: #dff2fa;
-  background: #19799f;
+  background: #5eaaa8;
   content: attr(data-title);
+  /* -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s; */
   -webkit-transform: rotateX(-90deg);
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
@@ -115,35 +147,42 @@ html, body{
   transform-origin: 50% 0;
   -ms-transform: translateY(-18px);
 }
-#cssmenu > ul > li:hover > a::before,
-#cssmenu > ul > li > a:hover::before {
+
+#cssmenu>ul>li:hover>a::before,
+#cssmenu>ul>li>a:hover::before {
   background: #3db2e1;
 }
+
 #cssmenu.small-screen {
   width: 100%;
 }
-#cssmenu.small-screen > ul,
-#cssmenu.small-screen.align-center > ul {
+
+#cssmenu.small-screen>ul,
+#cssmenu.small-screen.align-center>ul {
   width: 100%;
   text-align: left;
 }
-#cssmenu.small-screen > ul > li,
+
+#cssmenu.small-screen>ul>li,
 #cssmenu.small-screen.align-center {
   float: none;
   display: block;
   border-top: 1px solid rgba(100, 100, 100, 0.1);
 }
-#cssmenu.small-screen > ul > li:hover > a,
-#cssmenu.small-screen > ul > li > a:hover {
+
+#cssmenu.small-screen>ul>li:hover>a,
+#cssmenu.small-screen>ul>li>a:hover {
   color: #dff2fa;
   -webkit-transform: none;
   -moz-transform: none;
   transform: none;
   -ms-transform: none;
 }
-#cssmenu.small-screen > ul > li > a::before {
+
+#cssmenu.small-screen>ul>li>a::before {
   display: none;
 }
+
 #cssmenu.small-screen #menu-button {
   display: block;
   padding: 16px 20px;
@@ -155,6 +194,7 @@ html, body{
   letter-spacing: 1px;
   background: #3db2e1;
 }
+
 #cssmenu.small-screen #menu-button:after {
   content: "";
   position: absolute;
@@ -169,13 +209,15 @@ html, body{
   width: 22px;
   height: 3px;
 }
+
 #cssmenu.small-screen #menu-button.menu-opened:after {
   border-top: 2px solid #dff2fa;
   border-bottom: 2px solid #dff2fa;
 }
+
 #cssmenu.small-screen #menu-button:before {
   content: "";
-  position: fixed;
+  position: absolute;
   right: 20px;
   top: 27px;
   display: block;
@@ -183,21 +225,21 @@ html, body{
   height: 2px;
   background: #ffffff;
 }
+
 #cssmenu.small-screen #menu-button.menu-opened:before {
   background: #dff2fa;
 }
 
-/* blinking text code from here */
 
-  span>a{
-   position: fixed;
-    left: 20%;
-    top: 2%;
-    font-size: 120%;
-    font-family: cursive;
-    color: white ;
-    animation: blink 1s linear infinite;
-  }
+span>a {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  font-size: 120%;
+  font-family: cursive;
+  color: white;
+  animation: blink 1s linear infinite;
+}
 @keyframes blink{
 0%{opacity: 0;}
 50%{opacity: .5;}
@@ -214,64 +256,7 @@ html, body{
   margin: auto;
 }
 
-.loader {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-}
-.loader div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background: red;
-  -webkit-animation: go 1.0s infinite alternate ease;
-          animation: go 1.0s infinite alternate ease;
-  -webkit-box-shadow: 0 0 20px salmon;
-          box-shadow: 0 0 20px salmon;
-}
-.loader div:nth-child(1) {
-  -webkit-animation-delay: -0.9s;
-          animation-delay: -0.9s;
-}
-.loader div:nth-child(2) {
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
-}
-.loader div:nth-child(3) {
-  -webkit-animation-delay: -0.7s;
-          animation-delay: -0.7s;
-}
-.loader div:nth-child(4) {
-  -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
-}
-.loader div:nth-child(5) {
-  -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s;
-}
-.loader div:nth-child(6) {
-  -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
-}
-.loader div:nth-child(7) {
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
-}
-.loader div:nth-child(8) {
-  -webkit-animation-delay: -0.2s;
-          animation-delay: -0.2s;
-}
-.loader div:nth-child(9) {
-  -webkit-animation-delay: -0.1s;
-          animation-delay: -0.1s;
-}
-.loader div:nth-child(10) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
+
 
 @-webkit-keyframes go {
   100% {
@@ -563,11 +548,6 @@ html, body,#page-one {
   min-height: 100vh;
 }
 
-#page-two{
-  padding-top:8rem;
-  height:65vh;
-}
-
 #mainNav {
   background-color: #056676;
   color: #ddd;
@@ -611,15 +591,65 @@ p {
   
 }
 
-
 #page-two {
   background-image: -webkit-linear-gradient(125deg,#056676 20%,#5eaaa8 50%,#a3d2ca 50%,#e8ded2 80%);
   display:flex;
   flex-direction:row;
+  padding-top:8rem;
+  height:65vh;
 }
 .firstname{
   margin-right:10%;
   margin-left:10%;
 }
-
+@media screen and (max-width:600px)
+{
+  #downloadtext{
+    margin-top:5%;
+    font-size:1.2rem;
+    left:22%;
+  }
+  #mainNav{
+    line-height: 2rem;
+    padding:0 0.5rem;
+    top:12%;
+    font-size:0.7rem;
+    width:60%;
+    position:fixed;
+  }
+  #about{
+    visibility: hidden;
+  }
+  .content{
+    margin-top:-15%;
+  }
+  p{
+    margin-left:3%;
+  }
+  #page-two{
+    display:flex;
+    height:60vh;
+    flex-direction:column;
+  }
+  .firstname p{
+    margin-left:1%;
+  }
+  h2{
+    font-size:1.5rem;
+  }
+  .secondname{
+    margin-top:4%;
+  }
+ .secondname h2,p{
+   margin-left:11%;
+ }
+ .footer-social-icons {
+  position: fixed;
+  left: 87%;
+  bottom: 0%;
+  margin:5%;
+    display:block;
+ 
+}
+}
 
