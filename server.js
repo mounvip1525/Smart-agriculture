@@ -39,8 +39,6 @@ var options = {
     console.log('results', results[0]);
     res.send( results[0]);
 
-
-     
  });
 
 
@@ -59,9 +57,10 @@ if(req.url === "/") {
         res.end(html);
     })
 }
-else if( req.url === "/home"){
+
+else if( req.url === "/aboutus"){
     
-    fs.readFile("./public/index.html", "UTF-8", function(err,html){
+    fs.readFile("./public/aboutus.html", "UTF-8", function(err,html){
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.end(html);
     })
@@ -95,7 +94,7 @@ else if(req.url.match("\.jpg$")){
     res.writeHead(200,{"content-Type": "images/jpg"});
     fileStream.pipe(res);  
 }
-else if(req.url === '/about'){
+else if(req.url === '/aboutus'){
    res.writeHead(200,{'content-Type': 'text/html'});
    fs.createReadStream(__dirname + '/public/aboutus.html').pipe(res); 
   
